@@ -2,10 +2,19 @@ const path = require('path')
 const fs = require('fs-plus')
 const cheerio = require('cheerio')
 const upperCamelCase = require('uppercamelcase')
+const svgr = require('@svgr/core').default
 
-const iconsComponentPath = path.join(process.cwd(), 'icons')
+const iconsComponentPath = path.join(process.cwd(), 'monochrome')
 const iconsIndexPath = path.join(process.cwd(), 'index.js')
-const uniconsConfig = require('@iconscout/unicons/json/line.json')
+const uniconsConfig = require('@iconscout/unicons/json/monochrome.json')
+
+const COLOR_CLASS = {
+  'class="uim-primary"': 'opacity="1"',
+  'class="uim-secondary"': 'opacity="0.7"',
+  'class="uim-tertiary"': 'opacity="0.5"',
+  'class="uim-quaternary"': 'opacity="0.25"',
+  'class="uim-quinary"': 'opacity="0"'
+}
 
 // Clear Directories
 fs.removeSync(iconsComponentPath)
@@ -13,49 +22,21 @@ fs.mkdirSync(iconsComponentPath)
 
 const indexJs = []
 
+const icon = uniconsConfig[0]
+
 uniconsConfig.forEach(icon => {
-  const baseName = `uil-${icon.name}`
+  const baseName = `uim-${icon.name}`
   const location = path.join(iconsComponentPath, `${baseName}.js`)
   const name = upperCamelCase(baseName)
-  const svgFile = fs.readFileSync(path.resolve('node_modules/@iconscout/unicons', icon.svg), 'utf-8')
-
-  let data = svgFile.replace(/<svg[^>]+>/gi, '').replace(/<\/svg>/gi, '')
-  // Get Path Content from SVG
-  const $ = cheerio.load(data, {
-    xmlMode: true
+  let svgFile = fs.readFileSync(path.resolve('node_modules/@iconscout/unicons', icon.svg), 'utf-8')
+  
+  Object.keys(COLOR_CLASS).forEach(key => {
+    svgFile = svgFile.replace(new RegExp(key, 'g'), COLOR_CLASS[key])
   })
-  const svgPath = $('path').attr('d')
 
-  const template = `import React from 'react';
-import PropTypes from 'prop-types';
-
-const ${name} = (props) => {
-  const { color, size, ...otherProps } = props
-  return React.createElement('svg', {
-    xmlns: 'http://www.w3.org/2000/svg',
-    width: size,
-    height: size,
-    viewBox: '0 0 24 24',
-    fill: color,
-    ...otherProps
-  }, React.createElement('path', {
-    d: '${svgPath}'
-  }));
-};
-
-${name}.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
-${name}.defaultProps = {
-  color: 'currentColor',
-  size: '24',
-};
-
-export default ${name};`
-
-  fs.writeFileSync(location, template, 'utf-8')
+  svgr(svgFile, { svgo: false, svgProps: { width: "{props.size || '1em'}", height: "{props.size || '1em'}", fill: 'currentColor' } }, { componentName: name }).then(template => {
+    fs.writeFileSync(location, template, 'utf-8')
+  })
 
   // Add it to index.js
   indexJs.push(`export { default as ${name} } from './icons/${baseName}'`)
