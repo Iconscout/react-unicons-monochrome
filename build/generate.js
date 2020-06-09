@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 const upperCamelCase = require('uppercamelcase')
 const svgr = require('@svgr/core').default
 
-const iconsComponentPath = path.join(process.cwd(), 'monochrome')
+const iconsComponentPath = path.join(process.cwd(), 'icons')
 const iconsIndexPath = path.join(process.cwd(), 'index.js')
 const uniconsConfig = require('@iconscout/unicons/json/monochrome.json')
 
