@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@iconscout/react-unicons": "git+https://github.com/Iconscout/react-unicons.git",
+    "@iconscout/react-unicons-monochrome": "git+https://github.com/Iconscout/react-unicons-monochrome.git#feat-monochrome",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
