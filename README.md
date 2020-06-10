@@ -16,10 +16,10 @@ yarn add @iconscout/react-unicons-monochrome
 ### Use individual icons
 ```js
 import React from 'react';
-import UilReact from '@iconscout/react-unicons-monochrome/icons/uil-react'
+import UimReact from '@iconscout/react-unicons-monochrome/icons/uim-react'
 
 const App = () => {
-  return <UilReact size="140" color="#61DAFB" />
+  return <UimReact size="140" color="#61DAFB" />
 };
 
 export default App;
@@ -27,7 +27,7 @@ export default App;
 
 You can customize icons as below:
 ```html
-<Unicons.UilReact size="140" color="#61DAFB" />
+<Unicons.UimReact size="140" color="#61DAFB" />
 ```
 
 ### Usage as full Package
@@ -36,7 +36,7 @@ import React from 'react';
 import * as Unicons from '@iconscout/react-unicons-monochrome';
 
 const App = () => {
-  return <Unicons.UilReact />
+  return <Unicons.UimReact />
 };
 
 export default App;
