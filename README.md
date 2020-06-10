@@ -1,22 +1,22 @@
-# React Unicons
+# React Unicons - Monochrome Style
 
 1000+ Pixel-perfect vector icons as React Components. These icons are designed by [Iconscout](https://iconscout.com).
 
 ## Getting Started
 You can easily install [react-unicons](https://iconscout.com/unicons) using npm.
 ```bash
-npm install --save @iconscout/react-unicons
+npm install --save @iconscout/react-unicons-monochrome
 ```
 Or using `yarn`
 ```bash
-yarn add @iconscout/react-unicons
+yarn add @iconscout/react-unicons-monochrome
 ```
 
 ## Usage
 ### Use individual icons
 ```js
 import React from 'react';
-import UilReact from '@iconscout/react-unicons/icons/uil-react'
+import UilReact from '@iconscout/react-unicons-monochrome/icons/uil-react'
 
 const App = () => {
   return <UilReact size="140" color="#61DAFB" />
@@ -33,7 +33,7 @@ You can customize icons as below:
 ### Usage as full Package
 ```js
 import React from 'react';
-import * as Unicons from '@iconscout/react-unicons';
+import * as Unicons from '@iconscout/react-unicons-monochrome';
 
 const App = () => {
   return <Unicons.UilReact />
@@ -43,10 +43,7 @@ export default App;
 ````
 
 ### More ways
-- [React-native-unicons](https://github.com/Iconscout/react-native-unicons)
-- [Vue-unicons](https://github.com/antonreshetov/vue-unicons) by [Anton Reshetov](https://github.com/antonreshetov)
 - [Vector SVGs](https://iconscout.com/unicons)
-- [Icon Font](https://github.com/Iconscout/unicons)
 
 ## Contributing
 We will be happy to have community support for Unicons. Feel free to fork and create pull requests. We have given a small roadmap above so that you can help us build these features.
