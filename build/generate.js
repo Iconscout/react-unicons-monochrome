@@ -24,6 +24,24 @@ const indexJs = []
 
 const icon = uniconsConfig[0]
 
+const babelTransform = (component) => {
+  return new Promise ((resolve, reject) => {
+    require("@babel/core").transform(component, {
+      plugins: [
+        ["@babel/plugin-transform-react-jsx", {
+          useBuiltIns: true
+        }]
+      ],
+    }, function(err, result) {
+      if (err) {
+        reject(err)
+      } else {
+        resolve(result.code)
+      }
+    });
+  })
+}
+
 uniconsConfig.forEach(icon => {
   const baseName = `uim-${icon.name}`
   const location = path.join(iconsComponentPath, `${baseName}.js`)
@@ -35,7 +53,9 @@ uniconsConfig.forEach(icon => {
   })
 
   svgr(svgFile, { svgo: false, svgProps: { width: "{props.size || '1em'}", height: "{props.size || '1em'}", fill: 'currentColor' } }, { componentName: name }).then(template => {
-    fs.writeFileSync(location, template, 'utf-8')
+    babelTransform(template).then(reactComponent => {
+      fs.writeFileSync(location, reactComponent, 'utf-8')
+    })
   })
 
   // Add it to index.js
