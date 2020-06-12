@@ -1,22 +1,22 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./index.js",
+  entry: './src/index.ts',
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        use: ['babel-loader']
-      }
-    ]
+      },
+    ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: [ '.tsx', '.ts', '.js' ],
   },
   output: {
-    path: path.resolve(__dirname, "lib", "cjs"),
-    filename: "index.js",
+    path: path.resolve(__dirname, "dist"),
+    filename: "index.umd.js",
     globalObject: "this",
     libraryTarget: "umd",
   },
