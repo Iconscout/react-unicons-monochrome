@@ -54,8 +54,8 @@ uniconsConfig.forEach(icon => {
 
   svgr(svgFile, { typescript: true, svgo: false, svgProps: { width: "{props.size || '1em'}", height: "{props.size || '1em'}", fill: 'currentColor' } }, { componentName: name }).then(template => {
     const updatedTemplate = template
-    .replace(`import * as React from "react";`, `import * as React from "react";\nimport { UimIconProps } from "../index.types"\nimport "../utils/style.css";`)
-    .replace(`props: React.SVGProps<SVGSVGElement>`, 'props: UimIconProps');
+      .replace(`import * as React from "react";`, `import * as React from "react";\nimport { UimIconProps } from "../index.types"\nimport "../utils/style.css";`)
+      .replace(`props: React.SVGProps<SVGSVGElement>`, 'props: UimIconProps');
 
     fs.writeFileSync(location, updatedTemplate, 'utf-8')
   })
