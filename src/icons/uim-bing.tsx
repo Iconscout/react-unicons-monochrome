@@ -1,5 +1,6 @@
 import * as React from "react";
-import { UimIconProps } from '../index.types'
+import { UimIconProps } from "../index.types"
+import "../utils/style.css";
 
 function UimBing(props: UimIconProps) {
   return <svg data-name="Layer 1" viewBox="0 0 24 24" width={props.size || '1em'} height={props.size || '1em'} fill="currentColor" {...props}><polygon style={{

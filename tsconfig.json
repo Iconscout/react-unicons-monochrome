@@ -9,5 +9,5 @@
 		"declaration": true,
 		"moduleResolution": "node"
 	},
-	"exclude": ["node_modules", "build", "lib", "webpack.config.js", "commands"]
+	"exclude": ["node_modules", "build", "lib", "webpack.config.js", "commands", "example"]
 }
