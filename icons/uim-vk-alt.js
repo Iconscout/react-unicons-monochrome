@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimVkAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M15.0625,23H8.92725C2.77783,23,1,21.21973,1,15.0625V8.92676C1,2.77832,2.78027,1,8.9375,1h6.13525C21.22217,1,23,2.78027,23,8.9375v6.13574C23,21.22168,21.21973,23,15.0625,23z"
   }), /*#__PURE__*/React.createElement("path", {

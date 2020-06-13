@@ -1,12 +1,14 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimBatteryBolt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M13.98816,12.05872A1.02324,1.02324,0,0,0,13,11H9.7323l1.44348-2.5a1.00016,1.00016,0,1,0-1.73242-1l-2.30957,4A1.02216,1.02216,0,0,0,8,13h3.2677L9.82422,15.5a1.00016,1.00016,0,0,0,1.73242,1l2.30957-4A1.26723,1.26723,0,0,0,13.98816,12.05872Z"
   }), /*#__PURE__*/React.createElement("path", {

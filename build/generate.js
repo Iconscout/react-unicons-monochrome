@@ -47,13 +47,15 @@ uniconsConfig.forEach(icon => {
   const location = path.join(iconsComponentPath, `${baseName}.js`)
   const name = upperCamelCase(baseName)
   let svgFile = fs.readFileSync(path.resolve('node_modules/@iconscout/unicons', icon.svg), 'utf-8')
-  
+
   Object.keys(COLOR_CLASS).forEach(key => {
     svgFile = svgFile.replace(new RegExp(key, 'g'), COLOR_CLASS[key])
   })
 
-  svgr(svgFile, { svgo: false, svgProps: { width: "{props.size || '1em'}", height: "{props.size || '1em'}", fill: 'currentColor' } }, { componentName: name }).then(template => {
-    babelTransform(template).then(reactComponent => {
+  svgr(svgFile, { svgo: false, expandProps: 'start', svgProps: { width: "{props.size || '1em'}", height: "{props.size || '1em'}", fill: 'currentColor', className: "{`ui-svg-inline ${props.className || ''}`}" } }, { componentName: name }).then(template => {
+    babelTransform(template).then(code => {
+      // Add CSS in reactComponent
+      reactComponent = code.replace(`import * as React from "react";`, `import * as React from "react";\nimport "../utils/style.css";`)
       fs.writeFileSync(location, reactComponent, 'utf-8')
     })
   })

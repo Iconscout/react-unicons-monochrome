@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimLockAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M9 7c0-1.65686 1.34314-3 3-3s3 1.34314 3 3v2h2V7c0-2.76141-2.23859-5-5-5S7 4.23859 7 7v2h2V7zM12 18c-.55214.00014-.99986-.44734-1-.99948 0-.00017 0-.00035 0-.00052v-3c0-.55229.44771-1 1-1s1 .44771 1 1v3c.00014.55214-.44734.99986-.99948 1C12.00035 18 12.00017 18 12 18z"
   }), /*#__PURE__*/React.createElement("path", {

@@ -1,12 +1,14 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimArrowCircleUp(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M16.707,11.293l-3.99969-3.9997a1.00354,1.00354,0,0,0-1.41468,0L7.293,11.293A.99989.99989,0,0,0,8.707,12.707L11,10.41406V16a1,1,0,0,0,2,0V10.41406l2.293,2.293A.99989.99989,0,0,0,16.707,11.293Z"
   }), /*#__PURE__*/React.createElement("path", {

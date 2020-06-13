@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimSlackAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.25,
     d: "M9.34,2a2,2,0,0,0,0,4h2V4a2,2,0,0,0-2-2m0,5.33H4a2,2,0,1,0,0,4H9.34a2,2,0,0,0,0-4"
   }), /*#__PURE__*/React.createElement("path", {

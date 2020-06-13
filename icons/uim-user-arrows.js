@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimUserArrows(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.25,
     d: "M6,16.5A3.5,3.5,0,1,1,9.5,13,3.50424,3.50424,0,0,1,6,16.5Z"
   }), /*#__PURE__*/React.createElement("path", {

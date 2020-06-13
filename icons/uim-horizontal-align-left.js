@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimHorizontalAlignLeft(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M16,10H4V6h11c0.55229,0,1,0.44772,1,1V10z"
   }), /*#__PURE__*/React.createElement("path", {

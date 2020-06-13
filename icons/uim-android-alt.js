@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimAndroidAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M16.2 4.7l.7-1.2c0 0 0 0 0 0C17.1 3 17 2.4 16.5 2.1 16 1.9 15.4 2 15.1 2.5l-.6 1.1C15.1 3.8 15.7 4.2 16.2 4.7zM7.8 4.7c.5-.5 1-.8 1.7-1.1L8.9 2.5c0 0 0 0 0 0C8.6 2 8 1.9 7.5 2.1S6.9 3 7.1 3.5L7.8 4.7z"
   }), /*#__PURE__*/React.createElement("rect", {

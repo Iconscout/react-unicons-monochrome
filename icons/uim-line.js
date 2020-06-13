@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimLine(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M18.22272,14.27783c-0.04119,0.0598-0.08659,0.11659-0.13587,0.16992l-0.00427,0.00464c-0.24191,0.28846-0.50896,0.55486-0.798,0.79608c-2.02912,1.87555-5.369,4.10846-5.80976,3.764c-0.38324-0.29944,0.63111-1.7641-0.53912-2.00787c-0.08167-0.0094-0.16309-0.01941-0.24384-0.03089l-0.00152-0.00006v-0.00012c-3.43714-0.48828-6.0473-2.89252-6.0473-5.785C4.643,7.94354,7.92816,5.313,11.98059,5.313s7.33759,2.63055,7.33759,5.87555C19.30886,12.31185,18.92314,13.39959,18.22272,14.27783z"
   }), /*#__PURE__*/React.createElement("path", {

@@ -1,12 +1,14 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimCornerDownLeft(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M9.94238,22a.99676.99676,0,0,1-.707-.293L4.60742,17.07861a.99964.99964,0,0,1,0-1.41406l4.62793-4.62891a.99989.99989,0,0,1,1.41406,1.41407L6.72852,16.37158,10.64941,20.293A1,1,0,0,1,9.94238,22Z"
   }), /*#__PURE__*/React.createElement("path", {

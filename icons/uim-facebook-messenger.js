@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimFacebookMessenger(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M18.00409,9.46484l-2.93567,4.658c-0.44268,0.70108-1.36989,0.91055-2.07097,0.46787c-0.03356-0.02119-0.06626-0.0437-0.09803-0.06748l-2.33606-1.7525c-0.21433-0.16036-0.50891-0.15954-0.72235,0.002L6.684,15.16919c-0.20877,0.15853-0.50652,0.11781-0.66505-0.09095c-0.11984-0.15781-0.12903-0.37345-0.02306-0.54089l2.93762-4.66c0.4428-0.70112,1.37013-0.91053,2.07125-0.46773c0.03348,0.02115,0.06612,0.04361,0.09783,0.06734l2.33606,1.75256c0.21433,0.16036,0.50891,0.15954,0.72235-0.002l3.155-2.39441c0.20876-0.15851,0.50649-0.11777,0.665,0.09099C18.10078,9.08187,18.10999,9.29744,18.00409,9.46484z"
   }), /*#__PURE__*/React.createElement("path", {

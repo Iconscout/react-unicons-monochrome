@@ -1,12 +1,14 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimVectorSquareAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M4 22a2 2 0 1 1 2-2A2.0026 2.0026 0 0 1 4 22zm0-2.002v0zM4 6A2 2 0 1 1 6 4 2.0026 2.0026 0 0 1 4 6zM4 3.99805v0zM20 6a2 2 0 1 1 2-2A2.0026 2.0026 0 0 1 20 6zm0-2.00195v0zM20 22a2 2 0 1 1 2-2A2.0026 2.0026 0 0 1 20 22zm0-2.002v0z"
   }), /*#__PURE__*/React.createElement("rect", {

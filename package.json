@@ -1,12 +1,12 @@
 {
   "name": "@iconscout/react-unicons-monochrome",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "1100+ vector icons as easy to use React Components",
   "main": "./lib/cjs/index.js",
   "module": "/index.js",
   "sideEffects": false,
   "scripts": {
-    "generate": "node ./build/generate.js && webpack"
+    "generate": "node ./build/generate.js"
   },
   "repository": {
     "type": "git",

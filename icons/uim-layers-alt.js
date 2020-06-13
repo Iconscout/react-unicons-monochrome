@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimLayersAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.25,
     d: "M21,2H9C8.44803,1.99969,8.00031,2.44689,8,2.99886C8,2.99924,8,2.99962,8,3v4h8c0.55197-0.00031,0.99969,0.44689,1,0.99886C17,7.99924,17,7.99962,17,8v8h4c0.55197,0.00031,0.99969-0.44689,1-0.99886c0-0.00038,0-0.00076,0-0.00114V3c0.00031-0.55197-0.44689-0.99969-0.99886-1C21.00076,2,21.00038,2,21,2z"
   }), /*#__PURE__*/React.createElement("path", {

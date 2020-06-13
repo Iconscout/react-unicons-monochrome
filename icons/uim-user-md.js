@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimUserMd(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M17.99847,8.06429,6.00266,8.109,5.72559,4.78353A3.00021,3.00021,0,0,1,8.16965,1.482L8.959,1.33871a17.03145,17.03145,0,0,1,6.08616.00066l.78593.1428a3.00013,3.00013,0,0,1,2.44334,3.30136Z"
   }), /*#__PURE__*/React.createElement("path", {

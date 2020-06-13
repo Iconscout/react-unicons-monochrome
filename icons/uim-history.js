@@ -1,12 +1,14 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimHistory(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M12,2A10.0165,10.0165,0,0,0,5.0061,4.87183V3a1,1,0,0,0-2,0V7.5a.99974.99974,0,0,0,1,1h4.5a1,1,0,0,0,0-2H6.21844A7.97907,7.97907,0,1,1,4,12a1,1,0,0,0-2,0A10,10,0,1,0,12,2Z"
   }), /*#__PURE__*/React.createElement("path", {

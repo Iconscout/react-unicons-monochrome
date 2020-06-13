@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimYoutube(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M15.66349,11.77493c-2.017-1.07792-3.9484-2.07746-5.9226-3.11211v6.18993c2.07746-1.12933,4.26757-2.164,5.93117-3.08639C15.67206,11.76636,15.66349,11.77493,15.66349,11.77493z"
   }), /*#__PURE__*/React.createElement("path", {

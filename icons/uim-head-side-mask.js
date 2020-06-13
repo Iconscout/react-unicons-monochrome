@@ -1,13 +1,15 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimHeadSideMask(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M20.47638,9.287,12.3374,12H4.5a.99984.99984,0,0,0-.9375,1.34814l1.44727,3.89454c.01269.03418.02734.06689.043.09912A2.9843,2.9843,0,0,0,7.73633,19h4.76056l.00311.00049a.9992.9992,0,0,0,.31934-.05274l5.86456-1.978.61578-2.31861L13.5,16.60724V13.72089l6.634-2.21137.33283-1.25317A1.03147,1.03147,0,0,0,20.5,10V9.77246C20.5,9.60883,20.48633,9.44836,20.47638,9.287Z"
   }), /*#__PURE__*/React.createElement("path", {
