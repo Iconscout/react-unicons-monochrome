@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimBloggerAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M20,23H4c-1.65611-0.00181-2.99819-1.34389-3-3V4c0.00181-1.65611,1.34389-2.99819,3-3h16c1.65611,0.00181,2.99819,1.34389,3,3v16C22.99819,21.65611,21.65611,22.99819,20,23z"
   }), /*#__PURE__*/React.createElement("path", {

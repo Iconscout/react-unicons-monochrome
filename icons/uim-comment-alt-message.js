@@ -2,13 +2,13 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimCommentAltMessage(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M17 9H7A1 1 0 0 1 7 7H17a1 1 0 0 1 0 2zM17 13H7a1 1 0 0 1 0-2H17a1 1 0 0 1 0 2z"
   }), /*#__PURE__*/React.createElement("path", {

@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimLinkedin(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("rect", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("rect", {
     width: 3.002,
     height: 9.031,
     x: 5.086,

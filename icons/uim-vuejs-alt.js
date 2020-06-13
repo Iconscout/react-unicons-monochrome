@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimVuejsAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("polygon", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("polygon", {
     opacity: 0.5,
     points: "12.018 19.151 4.315 6 7.138 6 12.024 14.407 16.871 6 19.68 6"
   }), /*#__PURE__*/React.createElement("path", {

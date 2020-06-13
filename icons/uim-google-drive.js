@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimGoogleDrive(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.25,
     d: "M15.33353,14.88737H22L15.33353,3.33791H8.66662L15.33353,14.88737z"
   }), /*#__PURE__*/React.createElement("polygon", {

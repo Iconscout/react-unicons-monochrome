@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimDropbox(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("polygon", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("polygon", {
     opacity: 1,
     fillRule: "evenodd",
     points: "16.53 10.091 21 12.939 16.498 15.807 12 12.941 7.502 15.807 3 12.939 7.47 10.091 3 7.243 7.502 4.375 12 7.241 16.498 4.375 21 7.243",

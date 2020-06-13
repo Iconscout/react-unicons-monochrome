@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimPaypal(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M8.88188,19.94c-0.07709,0.48569-0.49587,0.84325-0.98764,0.84325H4.06249c-0.84674,0.00182-1.53463-0.68312-1.53646-1.52986c-0.00018-0.08553,0.00679-0.17093,0.02085-0.25529L5.13672,2.5918C5.28397,1.67638,6.07281,1.00247,7,1h6.21387c2.56054,0,4.4082,0.62012,5.49218,1.84277c1.04665,1.20585,1.44867,2.8419,1.08008,4.39551c-0.02148,0.13477-0.043,0.27051-0.07519,0.418c-0.82324,4.21777-3.65528,6.457-8.18555,6.457H9.80664L8.88188,19.94z M4.52246,19.31157l-0.00195,0.00684L4.52246,19.31157z M7.11328,2.89657l-0.001,0.002L7.11328,2.89657z"
   }), /*#__PURE__*/React.createElement("path", {

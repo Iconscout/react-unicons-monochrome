@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimGooglePlay(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M14.556,12.89526l2.57251,2.554l3.78552-2.18652c0.50624-0.25316,0.83042-0.7661,0.8418-1.332c-0.02048-0.54732-0.3428-1.03813-0.83691-1.27441c-0.31446-0.16992-3.01075-1.73437-4.02247-2.32324l-0.00293-0.002L4.63867,1.25586C4.13772,0.9388,3.50485,0.91604,2.98242,1.19629C2.93255,1.23018,2.88489,1.2672,2.83972,1.30713L14.556,12.89526z"
   }), /*#__PURE__*/React.createElement("path", {

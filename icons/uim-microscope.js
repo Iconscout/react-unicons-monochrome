@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimMicroscope(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.25,
     d: "M11.44141,13.60352a.99927.99927,0,0,1-.707-.293L7.19824,9.772a.99964.99964,0,0,1,0-1.41406l6.36231-6.36279a.99655.99655,0,0,1,.39062-.2417l2.1211-.70752a.99976.99976,0,0,1,1.02343.2417l2.12207,2.12158A.9997.9997,0,0,1,19.459,4.43262l-.708,2.12207a.99138.99138,0,0,1-.24121.39062l-6.36133,6.36524A.99928.99928,0,0,1,11.44141,13.60352Zm6.36132-7.36524h0Z"
   }), /*#__PURE__*/React.createElement("path", {

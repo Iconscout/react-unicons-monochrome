@@ -2,13 +2,13 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimSkypeAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M16.5,23a6.50123,6.50123,0,0,1-2.80859-.63867A10.49127,10.49127,0,0,1,1.63867,10.30859a6.499,6.499,0,0,1,8.66992-8.66992A10.49127,10.49127,0,0,1,22.36133,13.69141,6.499,6.499,0,0,1,16.5,23Z"
   }), /*#__PURE__*/React.createElement("path", {

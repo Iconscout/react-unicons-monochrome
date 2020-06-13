@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimStarHalfAlt(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M21.95117,9.67041c-0.11768-0.36194-0.43052-0.62576-0.80713-0.68066l-5.69873-0.82813L12.897,2.99805c-0.17718-0.32748-0.52492-0.52597-0.897-0.512v16.27909l5.09717,2.67968c0.48896,0.257,1.09369,0.06895,1.35069-0.42001c0.10228-0.19461,0.1376-0.41749,0.10048-0.63419l-0.97363-5.67578l4.12353-4.019C21.97077,10.42999,22.06881,10.0325,21.95117,9.67041z"
   }), /*#__PURE__*/React.createElement("path", {

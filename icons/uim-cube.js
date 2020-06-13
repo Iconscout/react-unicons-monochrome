@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimCube(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("polygon", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("polygon", {
     opacity: 1,
     points: "12 12.3 3.5 7.05 12 1.8 20.5 7.05"
   }), /*#__PURE__*/React.createElement("polygon", {

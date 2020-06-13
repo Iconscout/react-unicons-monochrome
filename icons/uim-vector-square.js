@@ -2,13 +2,13 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimVectorSquare(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M5 8A3 3 0 1 1 8 5 3.00328 3.00328 0 0 1 5 8zM5 4A1 1 0 1 0 6 5 1.001 1.001 0 0 0 5 4zM19 8a3 3 0 1 1 3-3A3.00328 3.00328 0 0 1 19 8zm0-4a1 1 0 1 0 1 1A1.001 1.001 0 0 0 19 4zM5 22a3 3 0 1 1 3-3A3.00328 3.00328 0 0 1 5 22zm0-4a1 1 0 1 0 1 1A1.001 1.001 0 0 0 5 18zM19 22a3 3 0 1 1 3-3A3.00328 3.00328 0 0 1 19 22zm0-4a1 1 0 1 0 1 1A1.001 1.001 0 0 0 19 18z"
   }), /*#__PURE__*/React.createElement("path", {

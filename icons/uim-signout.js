@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimSignout(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M21.207,11.29346l-3-3A.99989.99989,0,1,0,16.793,9.70752l1.293,1.293H12.5a1,1,0,0,0,0,2h5.58594l-1.293,1.293A.99989.99989,0,1,0,18.207,15.70752l3-3A.99962.99962,0,0,0,21.207,11.29346Z"
   }), /*#__PURE__*/React.createElement("path", {

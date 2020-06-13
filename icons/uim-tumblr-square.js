@@ -2,14 +2,14 @@ import * as React from "react";
 import "../utils/style.css";
 
 function UimTumblrSquare(props) {
-  return /*#__PURE__*/React.createElement("svg", Object.assign({
+  return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
     fill: "currentColor",
-    class: "ui-svg-inline"
-  }, props), /*#__PURE__*/React.createElement("path", {
+    className: `ui-svg-inline ${props.className || ''}`
+  }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M13.57117,17.84937c-1.86527,0.19411-3.53473-1.16063-3.72884-3.0259C9.83176,14.72195,9.82578,14.62,9.8244,14.51794v-4.07556H8.56189v-1.6112c1.41093-0.5367,2.37301-1.85451,2.45435-3.36188c0.00252-0.04917,0.04095-0.08893,0.09-0.09314H12.933v3.17755h2.49634v1.88879h-2.505v3.88318c-0.07815,0.59912,0.34417,1.14817,0.9433,1.22632c0.08533,0.01113,0.17169,0.01216,0.25726,0.00305c0.34548-0.01192,0.68614-0.08476,1.00629-0.21515l0.59991,1.77869C15.11991,17.60942,14.35482,17.86827,13.57117,17.84937z"
   }), /*#__PURE__*/React.createElement("path", {
