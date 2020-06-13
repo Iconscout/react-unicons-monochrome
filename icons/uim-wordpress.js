@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimWordpress(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimWordpress(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.25,
     d: "M12,2.6A9.4,9.4,0,1,0,21.4,12,9.4,9.4,0,0,0,12,2.6Z"

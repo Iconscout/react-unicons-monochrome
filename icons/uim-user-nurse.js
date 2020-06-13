@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimUserNurse(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimUserNurse(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M20.93994,22H3.06006a1.00012,1.00012,0,0,1-.99414-1.1084,9.99519,9.99519,0,0,1,19.86816,0A1.00012,1.00012,0,0,1,20.93994,22Z"

@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimWebGridAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimWebGridAlt(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("polygon", {
     opacity: 0.25,
     points: "22 8 2 8 2 10 11 10 11 22 13 22 13 10 22 10"

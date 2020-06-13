@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimRedditAlienAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimRedditAlienAlt(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M18.89258,7c-1.66233-0.00793-3.00447-1.36011-3-3.02246c0.0124-1.65692,1.36566-2.99007,3.02258-2.97767c1.63067,0.0122,2.95301,1.32467,2.97742,2.95521v0.02246C21.89705,5.63989,20.55491,6.99207,18.89258,7z M11.7998,23c-6.168,0-11-3.0752-11-7s4.832-7,11-7s11,3.0752,11,7S17.96777,23,11.7998,23z"

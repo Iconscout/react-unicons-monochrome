@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimTelegram(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimTelegram(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M15.17383,17.15247c-0.14503,0.36162-0.55575,0.5372-0.91738,0.39217c-0.02908-0.01166-0.05735-0.02525-0.08462-0.04067l-2.71467-2.10938L9.71484,17.002c-0.08216,0.0607-0.18957,0.07538-0.285,0.03894l0.334-2.98846l0.01069,0.00848l0.00683-0.059c0,0,4.885-4.44751,5.084-4.637c0.20147-0.189,0.135-0.23,0.135-0.23c0.01147-0.23053-0.36152,0-0.36152,0L8.16632,13.299l-2.69549-0.918c0,0-0.414-0.1485-0.453-0.475c-0.041-0.324,0.46649-0.5,0.46649-0.5l10.717-4.25751c0,0,0.881-0.39252,0.881,0.25751L15.17383,17.15247z"

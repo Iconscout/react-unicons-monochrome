@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimSanitizer(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimSanitizer(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M5,5a1,1,0,0,1-.707-1.707l.82861-.82861A4.96656,4.96656,0,0,1,8.65674,1H17a1,1,0,0,1,0,2H8.65674a3.022,3.022,0,0,0-2.1211.87842L5.707,4.707A.99676.99676,0,0,1,5,5Z"

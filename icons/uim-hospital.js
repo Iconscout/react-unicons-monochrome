@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimHospital(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimHospital(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M12.5 14.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zM12.5 18.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zM7.5 14.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zM7.5 18.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zM17.5 14.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zM17.5 18.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"

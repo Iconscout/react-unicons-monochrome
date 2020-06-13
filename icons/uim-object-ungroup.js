@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimObjectUngroup(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimObjectUngroup(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M4,16c-1.10457,0-2-0.89543-2-2s0.89543-2,2-2s2,0.89543,2,2C5.99857,15.10398,5.10398,15.99857,4,16z M4,13.998L4,13.998z M4,6C2.89543,6,2,5.10457,2,4s0.89543-2,2-2s2,0.89543,2,2C5.99857,5.10398,5.10398,5.99857,4,6z M4,3.99805L4,3.99805z M14,6c-1.10457,0-2-0.89543-2-2s0.89543-2,2-2s2,0.89543,2,2C15.99857,5.10398,15.10398,5.99857,14,6z M14,3.99805L14,3.99805z M14,16c-1.10457,0-2-0.89543-2-2s0.89543-2,2-2s2,0.89543,2,2C15.99857,15.10398,15.10398,15.99857,14,16z M14,13.998L14,13.998z"

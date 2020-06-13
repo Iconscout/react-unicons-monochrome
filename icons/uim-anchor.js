@@ -1,11 +1,13 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimAnchor(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M12,22a8.00917,8.00917,0,0,1-8-8,1,1,0,0,1,2,0,6,6,0,0,0,12,0,1,1,0,0,1,2,0A8.00917,8.00917,0,0,1,12,22Z"

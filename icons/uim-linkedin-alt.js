@@ -1,11 +1,13 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimLinkedinAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("g", {
     "data-name": "Brand Logos"
   }, /*#__PURE__*/React.createElement("path", {

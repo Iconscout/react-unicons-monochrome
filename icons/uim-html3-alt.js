@@ -1,11 +1,13 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimHtml3Alt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M11.99023,22a1.00125,1.00125,0,0,1-.26855-.03711L5.249,20.1582a1.00024,1.00024,0,0,1-.72754-.874L3.0791,3.08887A.99964.99964,0,0,1,4.0752,2H19.9248a.99964.99964,0,0,1,.9961,1.08887L19.47754,19.27734a.999.999,0,0,1-.72754.874l-6.49121,1.81152A1.00132,1.00132,0,0,1,11.99023,22Z"

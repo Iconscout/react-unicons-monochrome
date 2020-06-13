@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimSchedule(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimSchedule(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M7,5.99976C6.44803,6.00007,6.00031,5.55287,6,5.0009c0-0.00038,0-0.00076,0-0.00114v-2c0-0.55228,0.44772-1,1-1s1,0.44772,1,1v2c0.00031,0.55197-0.44689,0.99969-0.99886,1C7.00076,5.99976,7.00038,5.99976,7,5.99976z M17,5.99976c-0.55197,0.00031-0.99969-0.44689-1-0.99886c0-0.00038,0-0.00076,0-0.00114v-2c0-0.55228,0.44772-1,1-1s1,0.44772,1,1v2c0.00031,0.55197-0.44689,0.99969-0.99886,1C17.00076,5.99976,17.00038,5.99976,17,5.99976z"

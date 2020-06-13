@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimSignin(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimSignin(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M19,11H13.41406l1.293-1.293A.99989.99989,0,0,0,13.293,8.293l-3,3a.99962.99962,0,0,0,0,1.41406l3,3A.99989.99989,0,0,0,14.707,14.293L13.41406,13H19a1,1,0,0,0,0-2Z"

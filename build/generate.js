@@ -52,8 +52,10 @@ uniconsConfig.forEach(icon => {
     svgFile = svgFile.replace(new RegExp(key, 'g'), COLOR_CLASS[key])
   })
 
-  svgr(svgFile, { svgo: false, svgProps: { width: "{props.size || '1em'}", height: "{props.size || '1em'}", fill: 'currentColor' } }, { componentName: name }).then(template => {
-    babelTransform(template).then(reactComponent => {
+  svgr(svgFile, { svgo: false, svgProps: { width: "{props.size || '1em'}", height: "{props.size || '1em'}", fill: 'currentColor', class: 'ui-svg-inline' } }, { componentName: name }).then(template => {
+    babelTransform(template).then(code => {
+      // Add CSS in reactComponent
+      reactComponent = code.replace(`import * as React from "react";`, `import * as React from "react";\nimport "../utils/style.css";`)
       fs.writeFileSync(location, reactComponent, 'utf-8')
     })
   })

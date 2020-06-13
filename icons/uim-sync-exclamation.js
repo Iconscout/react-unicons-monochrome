@@ -1,11 +1,13 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimSyncExclamation(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M12 13a.99974.99974 0 0 1-1-1V9a1 1 0 0 1 2 0v3A.99974.99974 0 0 1 12 13zM12 16a.99042.99042 0 0 1-1-1 1.05 1.05 0 0 1 .29-.71 1.02673 1.02673 0 0 1 .32959-.21 1.002 1.002 0 0 1 1.09033.21A1.05232 1.05232 0 0 1 13 15a.99042.99042 0 0 1-1 1z"

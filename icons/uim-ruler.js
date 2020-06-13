@@ -1,11 +1,13 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimRuler(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M10.5859 20.48539L7.05036 16.94986a1 1 0 0 1 0-1.41421h0a1 1 0 0 1 1.41422 0l3.53553 3.53553zM13.41433 17.657L11.293 15.53564a1 1 0 0 1 0-1.41421h0a1 1 0 0 1 1.41421 0l2.12132 2.12132zM16.24275 14.82854L12.70722 11.293a1 1 0 0 1 0-1.41421h0a1 1 0 0 1 1.41421 0L17.657 13.41432zM19.07118 12.00011L16.94986 9.87879a1 1 0 0 1 0-1.41421h0a1 1 0 0 1 1.41421 0l2.12132 2.12132z"

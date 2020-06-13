@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimHtml3(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimHtml3(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("polygon", {
     opacity: 0.5,
     points: "17.476 6.123 16.942 12.117 16.944 12.15 16.942 12.224 16.942 12.223 16.562 16.415 16.521 16.787 12 18.037 12 18.038 11.996 18.041 7.484 16.783 7.178 13.318 9.391 13.318 9.548 15.08 12.001 15.745 12 15.746 14.461 15.071 14.722 12.202 9.576 12.202 9.532 11.717 9.431 10.581 9.379 9.97 14.917 9.97 15.119 7.739 6.682 7.739 6.638 7.254 6.538 6.117 6.485 5.507 17.529 5.507"

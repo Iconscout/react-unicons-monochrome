@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimUnlock(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimUnlock(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
     d: "M7,9h10c1.65685,0,3,1.34315,3,3v7c0,1.65685-1.34315,3-3,3H7c-1.65685,0-3-1.34315-3-3v-7C4,10.34315,5.34315,9,7,9z"

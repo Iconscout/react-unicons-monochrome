@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../utils/style.css";
 
 function UimRepeat(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({
@@ -6,7 +7,8 @@ function UimRepeat(props) {
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
-    fill: "currentColor"
+    fill: "currentColor",
+    class: "ui-svg-inline"
   }, props), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
     d: "M11.4978,22c-0.26527,0.0003-0.51971-0.10515-0.707-0.293l-2.5-2.5c-0.39048-0.39029-0.39064-1.02322-0.00036-1.4137c0.00012-0.00012,0.00024-0.00024,0.00036-0.00036l2.5-2.5c0.39214-0.38882,1.02523-0.38613,1.41405,0.00601c0.38649,0.38979,0.38648,1.01827-0.00002,1.40805l-1.793,1.793l1.793,1.793c0.39047,0.39058,0.39037,1.02375-0.00021,1.41421C12.01713,21.89464,11.7629,21.99995,11.4978,22z"
