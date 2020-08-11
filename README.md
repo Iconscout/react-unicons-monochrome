@@ -42,6 +42,9 @@ const App = () => {
 export default App;
 ````
 
+## PRO Icons
+If you've subscribed to Unicons PRO, you can [request](mailto:support@iconscout.com?subject=Unicons) your own NPM Token to get an access to all the PRO icons as NPM Package.
+
 ### More ways
 - [Vector SVGs](https://iconscout.com/unicons)
 
