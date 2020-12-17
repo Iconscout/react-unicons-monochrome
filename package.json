@@ -1,6 +1,6 @@
 {
   "name": "@iconscout/react-unicons-monochrome",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "1100+ vector icons as easy to use React Components",
   "main": "./lib/cjs/index.js",
   "module": "/index.js",
