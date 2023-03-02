@@ -10,7 +10,7 @@ function UimAlignLeft(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M21 7H3A1 1 0 0 1 3 5H21a1 1 0 0 1 0 2zM17 11H3A1 1 0 0 1 3 9H17a1 1 0 0 1 0 2zM21 15H3a1 1 0 0 1 0-2H21a1 1 0 0 1 0 2zM17 19H3a1 1 0 0 1 0-2H17a1 1 0 0 1 0 2z"
+    d: "M21 7H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2zm-4 4H3a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2zm4 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2zm-4 4H3a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2z"
   }));
 }
 

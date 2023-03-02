@@ -10,10 +10,10 @@ function UimMinusSquareFull(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M17,13H7a1,1,0,0,1,0-2H17a1,1,0,0,1,0,2Z"
+    d: "M17 13H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
-    d: "M21,2H3A.99974.99974,0,0,0,2,3V21a.99974.99974,0,0,0,1,1H21a.99974.99974,0,0,0,1-1V3A.99974.99974,0,0,0,21,2ZM17,13H7a1,1,0,0,1,0-2H17a1,1,0,0,1,0,2Z"
+    d: "M21 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Zm-4 11H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2Z"
   }));
 }
 
