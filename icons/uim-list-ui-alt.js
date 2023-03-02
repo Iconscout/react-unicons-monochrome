@@ -10,7 +10,7 @@ function UimListUiAlt(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M21.5 8H7.5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2zM21.5 13h-10a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2zM21.5 18h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"
+    d: "M21.5 8h-14a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2zm0 5h-10a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2zm0 5h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"
   }), /*#__PURE__*/React.createElement("circle", {
     cx: 3.5,
     cy: 7,

@@ -10,10 +10,10 @@ function UimKeyholeCircle(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M14,10a2,2,0,1,0-3,1.7226V15a1,1,0,0,0,2,0V11.7226A1.99146,1.99146,0,0,0,14,10Z"
+    d: "M14 10a2 2 0 1 0-3 1.723V15a1 1 0 0 0 2 0v-3.277A1.991 1.991 0 0 0 14 10Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
-    d: "M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm1,9.7226V15a1,1,0,0,1-2,0V11.7226a2,2,0,1,1,2,0Z"
+    d: "M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 9.723V15a1 1 0 0 1-2 0v-3.277a2 2 0 1 1 2 0Z"
   }));
 }
 

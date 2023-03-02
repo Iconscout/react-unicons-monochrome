@@ -10,10 +10,10 @@ function UimArrowDownRight(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M17,18H7a1,1,0,0,1,0-2h9V7a1,1,0,0,1,2,0V17A1,1,0,0,1,17,18Z"
+    d: "M17 18H7a1 1 0 0 1 0-2h9V7a1 1 0 0 1 2 0v10a1 1 0 0 1-1 1Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M17,18a.99676.99676,0,0,1-.707-.293l-10-10A.99989.99989,0,0,1,7.707,6.293l10,10A1,1,0,0,1,17,18Z"
+    d: "M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z"
   }));
 }
 

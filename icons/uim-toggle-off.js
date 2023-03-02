@@ -11,7 +11,7 @@ function UimToggleOff(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
-    d: "M16.5,17.5h-9C4.46243,17.5,2,15.03757,2,12s2.46243-5.5,5.5-5.5h9c3.03757,0,5.5,2.46243,5.5,5.5S19.53757,17.5,16.5,17.5z"
+    d: "M16.5 17.5h-9a5.5 5.5 0 1 1 0-11h9a5.5 5.5 0 1 1 0 11z"
   }), /*#__PURE__*/React.createElement("circle", {
     cx: 7.5,
     cy: 12,

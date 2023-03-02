@@ -11,10 +11,10 @@ function UimHospitalSymbol(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M15,7a.99974.99974,0,0,0-1,1v3H10V8A1,1,0,0,0,8,8v8a1,1,0,0,0,2,0V13h4v3a1,1,0,0,0,2,0V8A.99974.99974,0,0,0,15,7Z"
+    d: "M15 7a1 1 0 0 0-1 1v3h-4V8a1 1 0 0 0-2 0v8a1 1 0 0 0 2 0v-3h4v3a1 1 0 0 0 2 0V8a1 1 0 0 0-1-1Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
-    d: "M12,2A10,10,0,1,0,22,12,10.01146,10.01146,0,0,0,12,2Zm4,14a1,1,0,0,1-2,0V13H10v3a1,1,0,0,1-2,0V8a1,1,0,0,1,2,0v3h4V8a1,1,0,0,1,2,0Z"
+    d: "M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm4 14a1 1 0 0 1-2 0v-3h-4v3a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0v3h4V8a1 1 0 0 1 2 0Z"
   }));
 }
 

@@ -10,16 +10,16 @@ function UimRulerCombined(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M14 10H12V7a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1zM9 6A1 1 0 0 0 8 7V8H7a1 1 0 0 0 0 2h3V7A1 1 0 0 0 9 6zM10 12v2H7a1 1 0 0 1-1-1H6a1 1 0 0 1 1-1z"
+    d: "M14 10h-2V7a1 1 0 0 1 1-1 1 1 0 0 1 1 1zM9 6a1 1 0 0 0-1 1v1H7a1 1 0 0 0 0 2h3V7a1 1 0 0 0-1-1zm1 6v2H7a1 1 0 0 1-1-1 1 1 0 0 1 1-1z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M10,12v2H7a1,1,0,0,1-1-1H6a1,1,0,0,1,1-1Z"
+    d: "M10 12v2H7a1 1 0 0 1-1-1 1 1 0 0 1 1-1Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
-    d: "M21,2H3A.99974.99974,0,0,0,2,3V21a.99974.99974,0,0,0,1,1H9a.99974.99974,0,0,0,1-1V18H7a1,1,0,0,1,0-2h3V14H7a1,1,0,0,1,0-2h3V10H7A1,1,0,0,1,7,8H8V7a1,1,0,0,1,2,0v3h2V7a1,1,0,0,1,2,0v3h2V7a1,1,0,0,1,2,0v3h3a.99974.99974,0,0,0,1-1V3A.99974.99974,0,0,0,21,2Z"
+    d: "M21 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3H7a1 1 0 0 1 0-2h3v-2H7a1 1 0 0 1 0-2h3v-2H7a1 1 0 0 1 0-2h1V7a1 1 0 0 1 2 0v3h2V7a1 1 0 0 1 2 0v3h2V7a1 1 0 0 1 2 0v3h3a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M10 16v2H7a1 1 0 0 1-1-1H6a1 1 0 0 1 1-1zM18 10H16V7a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1z"
+    d: "M10 16v2H7a1 1 0 0 1-1-1 1 1 0 0 1 1-1zm8-6h-2V7a1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
   }));
 }
 
