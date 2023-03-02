@@ -1,6 +1,6 @@
 {
   "name": "@iconscout/react-unicons-monochrome",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "1100+ vector icons as easy to use React Components",
   "main": "./lib/cjs/index.js",
   "module": "/index.js",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
-    "@iconscout/unicons": "^3.0.6",
+    "@iconscout/unicons": "^4.0.5",
     "@svgr/core": "^5.4.0",
     "babel-loader": "^8.1.0",
     "cheerio": "^1.0.0-rc.3",
