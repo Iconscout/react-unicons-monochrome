@@ -10,7 +10,7 @@ function UimBorderVertical(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M11,21a.99974.99974,0,0,1-1-1V4a1,1,0,0,1,2,0V20A.99974.99974,0,0,1,11,21Z"
+    d: "M11 21a1 1 0 0 1-1-1V4a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1Z"
   }), /*#__PURE__*/React.createElement("circle", {
     cx: 7,
     cy: 12,

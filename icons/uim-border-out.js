@@ -10,7 +10,7 @@ function UimBorderOut(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M20,21H4a.99943.99943,0,0,1-1-1V4A.99943.99943,0,0,1,4,3H20a.99943.99943,0,0,1,1,1V20A.99943.99943,0,0,1,20,21ZM5,19H19V5H5Z"
+    d: "M20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1ZM5 19h14V5H5Z"
   }), /*#__PURE__*/React.createElement("circle", {
     cx: 12,
     cy: 12,

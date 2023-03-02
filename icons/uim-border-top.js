@@ -10,7 +10,7 @@ function UimBorderTop(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M20,4.5H4a1,1,0,0,1,0-2H20a1,1,0,0,1,0,2Z"
+    d: "M20 4.5H4a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2Z"
   }), /*#__PURE__*/React.createElement("circle", {
     cx: 12,
     cy: 7.5,

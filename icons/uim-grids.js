@@ -10,28 +10,16 @@ function UimGrids(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
-    d: "M23,21V3a.99974.99974,0,0,0-1-1H17V22h5A.99974.99974,0,0,0,23,21Z"
+    d: "M23 21V3a1 1 0 0 0-1-1h-5v20h5a1 1 0 0 0 1-1Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M1,3V21a.99974.99974,0,0,0,1,1H7V2H2A.99974.99974,0,0,0,1,3Z"
-  }), /*#__PURE__*/React.createElement("rect", {
-    width: 6,
-    height: 20,
-    x: 9,
-    y: 2,
-    opacity: 0.5
-  }), /*#__PURE__*/React.createElement("rect", {
-    width: 2,
-    height: 20,
-    x: 7,
-    y: 2,
-    opacity: 0.25
-  }), /*#__PURE__*/React.createElement("rect", {
-    width: 2,
-    height: 20,
-    x: 15,
-    y: 2,
-    opacity: 0.25
+    d: "M1 3v18a1 1 0 0 0 1 1h5V2H2a1 1 0 0 0-1 1Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    opacity: 0.5,
+    d: "M9 2h6v20H9z"
+  }), /*#__PURE__*/React.createElement("path", {
+    opacity: 0.25,
+    d: "M7 2h2v20H7zM15 2h2v20h-2z"
   }));
 }
 

@@ -10,7 +10,7 @@ function UimComment(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 0.5,
-    d: "M12,22H3a.99991.99991,0,0,1-.707-1.707L4.25684,18.3291A10.00061,10.00061,0,1,1,12,22Z"
+    d: "M12 22H3a1 1 0 0 1-.707-1.707l1.964-1.964A10 10 0 1 1 12 22Z"
   }));
 }
 

@@ -20,7 +20,7 @@ function UimExclamationCircle(props) {
     opacity: 1
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M12,13a1,1,0,0,1-1-1V8a1,1,0,0,1,2,0v4A1,1,0,0,1,12,13Z"
+    d: "M12 13a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1Z"
   }));
 }
 

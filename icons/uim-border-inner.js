@@ -10,10 +10,10 @@ function UimBorderInner(props) {
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M19.96484,13h-16a1,1,0,0,1,0-2h16a1,1,0,0,1,0,2Z"
+    d: "M19.965 13h-16a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2Z"
   }), /*#__PURE__*/React.createElement("path", {
     opacity: 1,
-    d: "M11.96484,21a.99974.99974,0,0,1-1-1V4a1,1,0,0,1,2,0V20A.99973.99973,0,0,1,11.96484,21Z"
+    d: "M11.965 21a1 1 0 0 1-1-1V4a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1Z"
   }), /*#__PURE__*/React.createElement("circle", {
     cx: 3.964,
     cy: 16,
