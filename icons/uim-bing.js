@@ -10,10 +10,10 @@ function UimBing(props) {
     fill: "currentColor",
     className: `ui-svg-inline ${props.className || ''}`
   }), /*#__PURE__*/React.createElement("polygon", {
+    opacity: 0.7,
     style: {
       isolation: "isolate"
     },
-    opacity: 0.7,
     points: "10.129 8.596 11.864 12.924 14.634 14.214 14.634 14.214 19 16.247 19 11.7 10.129 8.596"
   }), /*#__PURE__*/React.createElement("polygon", {
     opacity: 1,
