@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimGoogleDrive(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -20,5 +20,4 @@ function UimGoogleDrive(props) {
     d: "m8.667 14.887-3.333 5.775h13.333L22 14.887z"
   }));
 }
-
 export default UimGoogleDrive;

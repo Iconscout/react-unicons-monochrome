@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimBehanceAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -19,5 +19,4 @@ function UimBehanceAlt(props) {
     d: "M18 20a5.006 5.006 0 0 1-5-5v-2a5 5 0 1 1 10 0 1 1 0 0 1-2 0 3 3 0 0 0-6 0v2a2.998 2.998 0 0 0 5.9.754 1 1 0 0 1 1.94.492A4.985 4.985 0 0 1 18 20Z"
   })));
 }
-
 export default UimBehanceAlt;

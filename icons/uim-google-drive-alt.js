@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimGoogleDriveAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -20,5 +20,4 @@ function UimGoogleDriveAlt(props) {
     d: "m3 14.599 3 5.197L12 9.4 9 4.204 3 14.6z"
   }));
 }
-
 export default UimGoogleDriveAlt;

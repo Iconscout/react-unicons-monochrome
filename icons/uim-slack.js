@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimSlack(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -24,5 +24,4 @@ function UimSlack(props) {
     d: "M2.02,14.66626a1.99633,1.99633,0,1,0,3.99266,0V12.66667H4.01631A1.99806,1.99806,0,0,0,2.02,14.66626Zm5.32273,0v5.33333a1.99593,1.99593,0,1,0,3.99185.00082V14.66789a1.99593,1.99593,0,1,0-3.99185-.00163h0"
   })));
 }
-
 export default UimSlack;

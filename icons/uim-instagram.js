@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimInstagram(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -21,5 +21,4 @@ function UimInstagram(props) {
     d: "M17.339,5.462h-.00044a1.19979,1.19979,0,1,0,.00044,0Z"
   })));
 }
-
 export default UimInstagram;

@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimObjectGroup(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -20,5 +20,4 @@ function UimObjectGroup(props) {
     d: "M18.278 5a1.936 1.936 0 0 1 0-2H5.722a1.936 1.936 0 0 1 0 2h12.556zM20 18c.352.002.697.098 1 .278V5.722a1.936 1.936 0 0 1-2 0v12.556c.303-.18.648-.276 1-.278zM4 18c.352.002.697.098 1 .278V5.722a1.936 1.936 0 0 1-2 0v12.556c.303-.18.648-.276 1-.278zm14.278 1H5.722a1.936 1.936 0 0 1 0 2h12.556a1.936 1.936 0 0 1 0-2z"
   }));
 }
-
 export default UimObjectGroup;

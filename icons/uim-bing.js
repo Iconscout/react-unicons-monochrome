@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimBing(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -20,5 +20,4 @@ function UimBing(props) {
     points: "14.634 14.214 14.634 14.214 9 17.457 9 3.4 5 2 5 19.76 9 22 19 16.247 19 11.7 14.634 14.214"
   }));
 }
-
 export default UimBing;

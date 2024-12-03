@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimAppleAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -17,5 +17,4 @@ function UimAppleAlt(props) {
     d: "M15.216 5.04A5.56 5.56 0 0 0 16.536 1a5.672 5.672 0 0 0-3.73 1.92l-.02.047a5.56 5.56 0 0 0-1.32 4.04 5.672 5.672 0 0 0 3.73-1.92Z"
   })));
 }
-
 export default UimAppleAlt;

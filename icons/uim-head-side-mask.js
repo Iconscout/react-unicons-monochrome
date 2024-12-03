@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimHeadSideMask(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -17,5 +17,4 @@ function UimHeadSideMask(props) {
     d: "M3.508 12.894v.03-.03zm.17-.465A1.001 1.001 0 0 1 4.5 12h7.837l8.14-2.713a7.676 7.676 0 0 0-7.247-7.284 7.359 7.359 0 0 0-5.453 2.114A7.441 7.441 0 0 0 5.5 9.465l-1.852 3.011c-.005.009-.004.02-.01.03.015-.026.024-.053.04-.077zM13.5 13.721v2.886l5.8-1.956 1.167-4.395-.333 1.254-6.634 2.211zM18.537 17.522l.2-.754-.053.202-5.865 1.978A1 1 0 0 1 12.5 19h-4v2a1 1 0 0 0 1 1h9a1 1 0 0 0 .96-1.277Z"
   }));
 }
-
 export default UimHeadSideMask;

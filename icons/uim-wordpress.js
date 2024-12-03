@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimWordpress(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -26,5 +26,4 @@ function UimWordpress(props) {
     d: "M19.36877,8.85876a7.86528,7.86528,0,0,1-.63391,2.98475L16.1897,19.20239A8.33428,8.33428,0,0,0,19.31274,8.002,6.38147,6.38147,0,0,1,19.36877,8.85876Z"
   }));
 }
-
 export default UimWordpress;

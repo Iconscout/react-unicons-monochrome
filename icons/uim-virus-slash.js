@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimVirusSlash(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -39,5 +39,4 @@ function UimVirusSlash(props) {
     d: "m17.606 19.022-7.274-7.274a1.5 1.5 0 0 1-2.08-2.08L4.978 6.394A8.943 8.943 0 0 0 3.06 11H6a1 1 0 0 1 0 2H3.059A9.012 9.012 0 0 0 11 20.94V17a1 1 0 0 1 2 0v3.941a8.949 8.949 0 0 0 4.606-1.919zM9 16a1 1 0 1 1 1-1 1 1 0 0 1-1 1zM6.392 4.98l7.274 7.274a1.5 1.5 0 0 1 2.08 2.08l3.275 3.274A8.949 8.949 0 0 0 20.94 13H18a1 1 0 0 1 0-2h2.94A9.012 9.012 0 0 0 13 3.059V7a1 1 0 0 1-2 0V3.06a8.953 8.953 0 0 0-4.608 1.92zM15 8a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"
   }));
 }
-
 export default UimVirusSlash;
