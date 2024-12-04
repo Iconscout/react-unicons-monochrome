@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimPadlock(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -17,5 +17,4 @@ function UimPadlock(props) {
     d: "M17 9H7c-1.7 0-3 1.3-3 3v7c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3v-7c0-1.7-1.3-3-3-3zm-4 6.6V17c0 .6-.4 1-1 1s-1-.4-1-1v-1.4c-.3-.3-.5-.7-.5-1.1 0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5c0 .4-.2.8-.5 1.1z"
   }));
 }
-
 export default UimPadlock;

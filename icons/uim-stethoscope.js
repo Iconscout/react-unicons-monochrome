@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimStethoscope(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -17,5 +17,4 @@ function UimStethoscope(props) {
     d: "M19 14a2.965 2.965 0 0 1-1-.184V15.5a4.5 4.5 0 0 1-9 0v-.59a5.58 5.58 0 0 1-2 0v.59a6.5 6.5 0 0 0 13 0v-1.684A2.965 2.965 0 0 1 19 14Z"
   }));
 }
-
 export default UimStethoscope;

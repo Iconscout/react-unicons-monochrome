@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimUserNurse(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -23,5 +23,4 @@ function UimUserNurse(props) {
     d: "M6.09 9a5.993 5.993 0 0 0 11.82 0Z"
   }));
 }
-
 export default UimUserNurse;

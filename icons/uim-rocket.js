@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimRocket(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -17,5 +17,4 @@ function UimRocket(props) {
     d: "M22.601 2.062a1 1 0 0 0-.713-.713A11.249 11.249 0 0 0 10.47 4.972L7.266 8.776a12.936 12.936 0 0 0-2.924 6.71 1 1 0 0 0 .284.837l3.1 3.1a1 1 0 0 0 .708.293c.028 0 .057-.001.086-.004a11.847 11.847 0 0 0 6.79-2.86l3.664-3.368A11.204 11.204 0 0 0 22.6 2.062Zm-5.867 6.754a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5Z"
   }));
 }
-
 export default UimRocket;

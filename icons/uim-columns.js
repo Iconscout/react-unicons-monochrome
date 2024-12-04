@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimColumns(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -20,5 +20,4 @@ function UimColumns(props) {
     d: "M13 2h8a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-8V2z"
   }));
 }
-
 export default UimColumns;

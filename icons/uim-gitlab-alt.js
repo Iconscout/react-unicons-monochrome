@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimGitlabAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -34,5 +34,4 @@ function UimGitlabAlt(props) {
     d: "m11.999 21.421-8.84-11.334H8.32l3.679 11.334z"
   })));
 }
-
 export default UimGitlabAlt;

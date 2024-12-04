@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimStoreSlash(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -26,5 +26,4 @@ function UimStoreSlash(props) {
     d: "M13.211 11.797A3.957 3.957 0 0 0 15 10.643 3.998 3.998 0 0 0 22 8a1.006 1.006 0 0 0-.071-.371l-2-5A1 1 0 0 0 19 2H5a1 1 0 0 0-.929.629l-.008.02zM3.255 4.669 2.071 7.63A1.006 1.006 0 0 0 2 8a3.998 3.998 0 0 0 7 2.643 3.84 3.84 0 0 0 1.095.866z"
   }));
 }
-
 export default UimStoreSlash;

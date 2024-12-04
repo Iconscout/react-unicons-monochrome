@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimVkAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -26,5 +26,4 @@ function UimVkAlt(props) {
     d: "M12.57 13.83a1 1 0 0 1-.38-1.926 5.86 5.86 0 0 0 3.485-4.126 1 1 0 1 1 1.95.444 7.865 7.865 0 0 1-4.676 5.534.996.996 0 0 1-.379.074zm-.916-4.828h-.003L10.997 9A1 1 0 0 1 10 7.997 1.03 1.03 0 0 1 11.003 7l.654.002a1 1 0 0 1-.003 2z"
   }));
 }
-
 export default UimVkAlt;

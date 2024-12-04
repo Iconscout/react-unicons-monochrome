@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimCircleLayer(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -22,5 +22,4 @@ function UimCircleLayer(props) {
     d: "M11 7a6 6 0 0 0-5.97 5.406 4.997 4.997 0 0 1 6.564 6.564A6 6 0 0 0 11 7z"
   }));
 }
-
 export default UimCircleLayer;

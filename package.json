@@ -1,12 +1,16 @@
 {
   "name": "@iconscout/react-unicons-monochrome",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "1,100+ vector icons as easy to use React Components",
   "main": "./lib/cjs/index.js",
-  "module": "/index.js",
+  "module": "./index.js",
   "sideEffects": false,
+  "exports": {
+    "require": "./lib/cjs/index.js",
+    "import": "./index.js"
+  },
   "scripts": {
-    "generate": "node ./build/generate.js"
+    "generate": "node ./build/generate.js && webpack"
   },
   "repository": {
     "type": "git",
@@ -37,11 +41,12 @@
     "@babel/preset-react": "^7.10.1",
     "@iconscout/unicons": "^4.0.8",
     "@svgr/core": "^5.4.0",
-    "babel-loader": "^8.1.0",
-    "cheerio": "^1.0.0-rc.3",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
     "fs-plus": "^3.1.1",
+    "style-loader": "^4.0.0",
     "uppercamelcase": "^3.0.0",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.97.0",
+    "webpack-cli": "^5.1.4"
   }
 }

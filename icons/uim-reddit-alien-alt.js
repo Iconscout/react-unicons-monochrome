@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimRedditAlienAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -20,5 +20,4 @@ function UimRedditAlienAlt(props) {
     d: "M11.842 19.5a5.11 5.11 0 0 1-3.781-1.218 1 1 0 0 1 1.416-1.414c.68.5 1.525.726 2.365.632a3.375 3.375 0 0 0 2.368-.633 1 1 0 1 1 1.414 1.416 5.12 5.12 0 0 1-3.782 1.217zM10 14.002a1 1 0 1 0-1 1c.552-.001 1-.448 1-1zm6 0a1 1 0 1 0-1 1c.552-.001 1-.448 1-1z"
   }));
 }
-
 export default UimRedditAlienAlt;

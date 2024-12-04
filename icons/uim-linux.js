@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimLinux(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -34,5 +34,4 @@ function UimLinux(props) {
     d: "M13.8 19.4c-1.3.7-3 .6-4.2-.4.1.2.2.3.3.5v.1c.1.3.2.5.2.8 0 .2-.1.3-.1.5.5 0 1.1-.2 2-.3.5 0 1.1.1 1.8.2-.1-.5-.1-1 0-1.4z"
   }));
 }
-
 export default UimLinux;

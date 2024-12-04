@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimVuejs(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -20,5 +20,4 @@ function UimVuejs(props) {
     d: "m22.001 2.438-4.384-.003L14.1 8.35l-2.07 3.5-2.1-3.5-3.546-5.913-4.39.024a1 1 0 0 0-.857 1.506l10.02 17.105a1 1 0 0 0 1.727-.002l9.98-17.128a1 1 0 0 0-.863-1.504z"
   }));
 }
-
 export default UimVuejs;

@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimAnchor(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -19,5 +19,4 @@ function UimAnchor(props) {
     d: "M14 11h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2zm-2-3a3 3 0 1 1 3-3 3.003 3.003 0 0 1-3 3zm0-4a1 1 0 1 0 1 1 1.001 1.001 0 0 0-1-1z"
   }));
 }
-
 export default UimAnchor;

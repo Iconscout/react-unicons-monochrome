@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimVectorSquare(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -16,5 +16,4 @@ function UimVectorSquare(props) {
     d: "M16.184 20a2.805 2.805 0 0 1 0-2H7.816a2.806 2.806 0 0 1 0 2zM19 8a2.965 2.965 0 0 1-1-.184v8.368a2.806 2.806 0 0 1 2 0V7.816A2.965 2.965 0 0 1 19 8zM7.816 4A2.965 2.965 0 0 1 8 5a2.965 2.965 0 0 1-.184 1h8.368A2.965 2.965 0 0 1 16 5a2.965 2.965 0 0 1 .184-1zM5 16a2.965 2.965 0 0 1 1 .184V7.816A2.965 2.965 0 0 1 5 8a2.965 2.965 0 0 1-1-.184v8.368A2.965 2.965 0 0 1 5 16z"
   }));
 }
-
 export default UimVectorSquare;

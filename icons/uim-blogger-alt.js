@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimBloggerAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -17,5 +17,4 @@ function UimBloggerAlt(props) {
     d: "M16.003 10.002H16V9a4.004 4.004 0 0 0-4-4h-2a5.006 5.006 0 0 0-5 5v4a5.006 5.006 0 0 0 5 5h4a5.006 5.006 0 0 0 5-5v-1a3 3 0 0 0-2.997-2.998zM10 9h1a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2zm4 6h-4a1 1 0 1 1 0-2h4a1 1 0 1 1 0 2z"
   }));
 }
-
 export default UimBloggerAlt;

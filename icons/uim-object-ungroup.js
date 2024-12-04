@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimObjectUngroup(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -32,5 +32,4 @@ function UimObjectUngroup(props) {
     d: "M15 9V5.722a1.936 1.936 0 0 1-2 0V9h2zm-2 2v1.278a1.936 1.936 0 0 1 2 0V11h-2z"
   }));
 }
-
 export default UimObjectUngroup;

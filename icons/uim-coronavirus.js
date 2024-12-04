@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimCoronavirus(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -40,5 +40,4 @@ function UimCoronavirus(props) {
     d: "M4.979 6.393a9.063 9.063 0 0 1 1.414-1.414l-.757-.757a1 1 0 0 0-1.414 1.414zm0 11.214-.757.757a1 1 0 1 0 1.414 1.414l.757-.757a9.063 9.063 0 0 1-1.414-1.414zm14.042 0a9.063 9.063 0 0 1-1.414 1.414l.757.757a1 1 0 0 0 1.414-1.414zm0-11.214.757-.757a1 1 0 0 0-1.414-1.414l-.757.757a9.063 9.063 0 0 1 1.414 1.414z"
   }));
 }
-
 export default UimCoronavirus;

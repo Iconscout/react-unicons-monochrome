@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimToiletPaper(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     "data-name": "Layer 1",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -26,5 +26,4 @@ function UimToiletPaper(props) {
     d: "M12 8c0 3.309-2.243 6-5 6h5Z"
   }));
 }
-
 export default UimToiletPaper;

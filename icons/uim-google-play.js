@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimGooglePlay(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     enableBackground: "new 0 0 24 24",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
@@ -23,5 +23,4 @@ function UimGooglePlay(props) {
     d: "M20.919 10.656c-.744-.4-3.37-1.944-3.791-2.188l-2.597 2.577-.921.914.946.936 2.573 2.554 3.785-2.186c.506-.253.83-.766.842-1.332a1.474 1.474 0 0 0-.837-1.275z"
   }));
 }
-
 export default UimGooglePlay;

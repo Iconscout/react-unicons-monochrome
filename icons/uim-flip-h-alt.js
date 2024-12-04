@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../utils/style.css";
-
 function UimFlipHAlt(props) {
   return /*#__PURE__*/React.createElement("svg", Object.assign({}, props, {
+    xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
     width: props.size || '1em',
     height: props.size || '1em',
@@ -19,5 +19,4 @@ function UimFlipHAlt(props) {
     d: "M20 22a.974.974 0 0 1-.242-.03l-16-4A1 1 0 0 1 3 17v-3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1ZM5 16.219l14 3.5V15H5Z"
   }));
 }
-
 export default UimFlipHAlt;
